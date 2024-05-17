@@ -1,0 +1,77 @@
+body{
+    background-color: #264792;
+    font-family: Arial, Helvetica, sans-serif
+}
+ /*Encabezado*/
+ .encabezado {
+    line-height: .8;
+    background-color: #bf994d;
+}
+/*Texto*/
+ /*Titulo del encabezado*/
+.titulo{
+    color: white;
+    margin: 10px;
+   /* height: 125px;
+    border: 2px solid white;*/
+    padding: 5px 5px 5px 5px;
+    /*display: flex;
+    flex-direction: row;*/
+    background-color:#bf994d;
+}
+.subtitulos{
+    text-align: center;
+
+}
+           /*Imagenes*/
+.logo img{
+    float: left;
+}
+.img1{
+    width:125px; 
+    height:125px;
+    border-radius: 50px;
+    text-align: center;
+    margin: 10px;
+
+}
+.integrantes{
+    background-color:burlywood;
+    border: 2px solid #bf994d;
+    border-radius: 10px;
+    margin: 20 px;
+    text-align: center;
+    display: flex;
+}
+            /*Formatos*/
+.menu a{
+    color: white;
+    text-decoration: none;
+    background-color:#bf994d;
+}
+.menu{
+    border: 2px solid ;
+    background: #bf994d;
+    margin: 10px;
+    text-align: center;
+}
+
+.portada{
+    width: 50%;
+}
+
+.movie{
+    background-color:white;
+    border: 2px solid #bf994d;
+    border-radius: 8px;
+    margin: 10px;
+}
+.foot{
+    background-color: #bf994d;
+    text-align: center;
+    margin: 10px;
+}
+mapa{
+    display: flex;
+    justify-content: center;
+}

@@ -1,77 +1,179 @@
-body{
-    background-color: #264792;
-    font-family: Arial, Helvetica, sans-serif
+:root {
+    /*Color principal*/
+    --color-base: #264892;
+    /*Colore constrastantes*/
+    --color-contrast-4: #0f1226;
+    /*Colores Complementarios*/
+    --color-complementary-5: #52525c;
+    /*Fuente principal*/
+    --font-primary: 'Roboto', sans-serif;
+    /*Colores adicionales*/
+    --color-white: #ffffff;
+    --color-aliceblue: #f0f8ff;
+    --color-whitesmoke: #f5f5f5;
+    --font-primary: 'Roboto', sans-serif;
 }
- /*Encabezado*/
- .encabezado {
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: var(--font-primary);
+}
+
+
+
+body {
+    background-color: #264792;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Propiedades del nuevo navbar */
+.nav__container {
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-base);
+    border-bottom: 1px solid var(--color-complementary-5);
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    grid-area: nav;
+    background-color: var(--);
+    height: 5rem;
+    border-radius: 15px;
+}
+
+.nav img {
+    height: 5rem;
+    margin-left: 2rem;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.6rem;
+    margin-left: 2rem;
+}
+
+.nav a:hover {
+    color: aliceblue;
+    background-color: var(--color-contrast-4);
+    border-radius: 5rem;
+    padding: 1rem;
+}
+
+.navbar {
+    text-align: center;
+    grid-area: navbar;
+    background-color: var(--color-base);
+    margin: 0;
+}
+
+.nav__busqueda-container {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 2rem;
+    background-color: whitesmoke;
+    height: 60%;
+    border-radius: 5rem;
+    border: 1px solid var(--color-complementary-5);
+}
+
+.nav__busqueda-container input {
+    border: none;
+    background-color: transparent;
+    height: 100%;
+    width: 100%;
+    padding: 0 1rem;
+    font-size: 1.6rem;
+}
+
+.nav__busqueda-container img {
+    height: 1rem;
+    margin-left: 1rem;
+    margin-right: 0;
+}
+
+/* Encabezado */
+.encabezado {
     line-height: .8;
     background-color: #bf994d;
 }
-/*Texto*/
- /*Titulo del encabezado*/
-.titulo{
+
+/* Texto */
+.titulo {
     color: white;
     margin: 10px;
-   /* height: 125px;
-    border: 2px solid white;*/
     padding: 5px 5px 5px 5px;
-    /*display: flex;
-    flex-direction: row;*/
-    background-color:#bf994d;
+    background-color: #bf994d;
 }
-.subtitulos{
-    text-align: center;
 
+.subtitulos {
+    text-align: center;
 }
-           /*Imagenes*/
-.logo img{
+
+/* Imagenes */
+.logo img {
     float: left;
 }
-.img1{
-    width:125px; 
-    height:125px;
+
+.img1 {
+    width: 125px;
+    height: 125px;
     border-radius: 50px;
     text-align: center;
     margin: 10px;
-
 }
-.integrantes{
-    background-color:burlywood;
+
+.integrantes {
+    background-color: burlywood;
     border: 2px solid #bf994d;
     border-radius: 10px;
-    margin: 20 px;
+    margin: 20px;
     text-align: center;
     display: flex;
 }
-            /*Formatos*/
-.menu a{
+
+/* Formatos */
+.menu a {
     color: white;
     text-decoration: none;
-    background-color:#bf994d;
+    background-color: #bf994d;
 }
-.menu{
-    border: 2px solid ;
+
+.menu {
+    border: 2px solid;
     background: #bf994d;
     margin: 10px;
     text-align: center;
 }
 
-.portada{
+.portada {
     width: 50%;
 }
 
-.movie{
-    background-color:white;
+.movie {
+    background-color: white;
     border: 2px solid #bf994d;
     border-radius: 8px;
     margin: 10px;
 }
-.foot{
+
+.foot {
     background-color: #bf994d;
     text-align: center;
     margin: 10px;
 }
-mapa{
+
+mapa {
     display: flex;
     justify-content: center;
 }

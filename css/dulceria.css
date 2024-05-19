@@ -1,6 +1,7 @@
 :root {
     /*Color principal*/
     --color-base: #264892;
+    --color-base-trnasparent: rgba(38, 72, 146, 0.8);
     /*Colore constrastantes*/
     --color-contrast-4: #0f1226;
     /*Colores Complementarios*/
@@ -49,8 +50,9 @@ body {
 .nav__container{
     margin: 0;
     padding: 0;
-    background-color: var(--color-base);
+    background-color: var(--color-base-trnasparent);
     border-bottom: 1px solid var(--color-complementary-5);
+    
 }
 
 .nav {
@@ -60,6 +62,9 @@ body {
     background-color: var(--);
     height: 5rem;
     border-radius: 15px;
+    position: fixed;
+    width: 100%;
+    background-color: var(--color-base-trnasparent);
 }
 .nav img {
     height: 5rem;
@@ -120,6 +125,10 @@ body {
     text-align: center;
     grid-area: navbar;
     background-color: #bf994d;
+}
+
+.cards {
+    margin-top: 6rem;
 }
 
 

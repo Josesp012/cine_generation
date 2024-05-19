@@ -1,6 +1,7 @@
 :root {
     /*Color principal*/
     --color-base: #264892;
+    --color-base-trnasparent: rgba(38, 72, 146, 0.8);
     /*Colore constrastantes*/
     --color-contrast-4: #0f1226;
     /*Colores Complementarios*/
@@ -38,9 +39,11 @@ html {
     display: flex;
     align-items: center;
     grid-area: nav;
-    background-color: var(--color-base);
+    background-color: var(--color-base-trnasparent);
     height: 5rem;
     border-bottom: 1px solid var(--color-complementary-5);
+    position:fixed;
+    width: 100%;
 }
 .nav img {
     height: 5rem;
@@ -147,6 +150,7 @@ html {
     border-radius: 2rem;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 1);
     text-align: center;
+    margin-top: 6rem;
 }
 
 .section-presentacion h1 {
@@ -159,7 +163,7 @@ html {
 .section-presentacion img {
     width: auto;
     height: auto;
-    border-radius: 5rem;
+    border-radius: 1rem;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 1);
 }
 
@@ -170,7 +174,7 @@ html {
     margin: 1rem;
     text-align: justify;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 1);
-    border-radius: 2rem;
+    border-radius: 1rem;
     background-color: var(--color-base);
 }
 /*Cards de las películas*/
@@ -259,4 +263,21 @@ html {
     height: 2rem;
     margin-right: 2rem;
     border-radius: 2rem;
+}
+
+/*Responsivo :)*/
+
+/*tablet :)*/
+@media (max-width: 768px){
+    .duclería__container{
+        display: none;
+    }
+    .section-presentacion{
+        display: flex;
+    }
+}
+
+/*mobile :)*/
+@media (max-width: 320px){
+
 }

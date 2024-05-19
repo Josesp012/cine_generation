@@ -1,6 +1,7 @@
 :root {
     /*Color principal*/
     --color-base: #264892;
+    --color-base-trnasparent: rgba(38, 72, 146, 0.8);
     /*Colore constrastantes*/
     --color-contrast-4: #0f1226;
     /*Colores Complementarios*/
@@ -13,7 +14,6 @@
     --color-whitesmoke: #f5f5f5;
     --font-primary: 'Roboto', sans-serif;
 }
-
 
 * {
     padding: 0;
@@ -48,6 +48,10 @@ body {
     background-color: var(--);
     height: 5rem;
     border-radius: 15px;
+    background-color: var(--color-base-trnasparent);
+    border-bottom: 1px solid var(--color-complementary-5);
+    position: fixed;
+    width: 100%;
 }
 
 .nav img {
@@ -102,11 +106,13 @@ body {
     margin-right: 0;
 }
 
-/* Encabezado */
-.encabezado {
-    line-height: .8;
-    background-color: #bf994d;
+
+/*main*/
+.main section{
+    padding-top: 8rem;
 }
+
+
 
 /* Texto */
 .titulo {

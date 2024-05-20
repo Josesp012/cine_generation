@@ -10,29 +10,24 @@
 </head>
 
 <body class="grid-container">
-    <header class="header">
-        <!--Encabezado de la página-->
-        <div class="nombrepag">
-            <div class="logo">
-                <img src="/img/1.png" alt="logo" width="125px" height="125px">
+    <header class=".nav__container">
+        <nav class="nav">
+            <img src="./img/loguito.png" alt="Logotipo">
+            <a href="./index.html">Inicio</a>
+            <a href="./cartelera.html">Cartelera</a>
+            <a href="./dulceria.html">Dulcería</a>
+            <a href="./nosotros.html">Nosotros</a>
+            <a href="./registro.html">Regístrate</a>
+            <div class="nav__busqueda-container">
+                <img src="./img/img-2.png" alt="icono busqueda" class="icono-search">
+                <input type="text" placeholder="Buscar Película">
             </div>
-
-            <div class="encabezado">
-                <h1>Generation Cinema</h1>
-                <h2>Registro</h2>
-            </div>
+        </nav>
     </header>
 
-    <nav class="navbar">
-        <a href="./index.html">Inicio</a>
-        <a href="./registro.html">Registrate</a>
-        <a href="./cartelera.html">Cartelera</a>
-        <a href="./dulceria.html">Dulcería</a>
-        <a href="./nosotros.html">Nosotros</a>
-    </nav>
-
-    <!--https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input-->
-    <h2 style="color: antiquewhite;">¡Cuéntanos sobre tus películas favoritas!</h2>
+    <main class="main">
+        <!--https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input-->
+    <h2 class="subtitle" style="color: antiquewhite;">¡Cuéntanos sobre tus películas favoritas!</h2>
     <form action="" method="" class="cards">
         <div class="uno">
             <h3>MI AMIGO ROBOT</h3>
@@ -133,13 +128,22 @@
             </div>
         </div>
     </form>
+    </main>
+
+
     <footer class="footer">
-        <h5>Atencion telefonica</h5>
-        <div class="note">Telefono=55 4578 6733</div><br>
-        <div class="note">HORARIOS DE ATENCIÓN</div>
-        <div class="note">Lunes a sábado: 8:00 a 20:00</div>
-        <div class="note">Domingo: 10:00 a 18:30</div>
-        <div class="note copyright">Todos los derechos reservados ® PFICG</div>
+            
+        <div class="footer__info">
+            <h3>Cinemas Generation</h3>
+            <p>Todos los derechos reservados &copy; 2024</p>
+            <p>Contacto: info@cinegeneration.com</p>
+        </div>
+        <div class="footer__social-media">
+            <a href="#" target="_blank"><img src="./img/img4.png" alt="Facebook"></a>
+            <a href="#" target="_blank"><img src="./img/img5.png" alt="Instagram"></a>
+            <a href="#" target="_blank"><img src="./img/img6.jpg" alt="Twitter"></a>
+        </div>
+        
     </footer>
 </body>
 

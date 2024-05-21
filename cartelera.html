@@ -5,10 +5,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--
-        <link rel="stylesheet" href="./css/cartelera.css">
-    -->
-    
+    <link rel="stylesheet" href="./style.css"> <!--<link rel="stylesheet" href="./css/cartelera.css">-->
     <title>Cartelera</title>
     <link rel="icon"
         href="https://th.bing.com/th/id/OIP.EG_P_Ua-9LR9-wrjWwg3YQHaHy?rs=1&pid=ImgDetMain"
@@ -17,6 +14,7 @@
     <style>
         body{
             background-color: #264792;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         }
         /*grid de las pelicula*/
         .titulo{
@@ -33,6 +31,7 @@
         }
         .sinopsis{
             grid-area: sinopsis;
+            font-size: 20px;
         }
         .horarios{
             grid-area: horarios;
@@ -111,57 +110,13 @@
         .header {
             color: white;
             margin: 10px;
-            margin-bottom: 0px;
+            margin-bottom: 10px;
             padding: 20px;
-            padding-bottom: 0px;
+            padding-bottom: 20px;
             line-height: 0.5;
         }
 
         /*Estilo de nav*/
-        .nav {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            background-color: #264792;
-            height: 5rem;
-            border-bottom: 1px solid #bf994d;
-            border-top: 1px solid #bf994d;
-            margin: 10px;
-
-            padding-bottom: 1rem;
-            padding-top: 1rem;
-        }
-        .nav img{
-            height: 4.5rem;
-            margin-left: 2rem;
-        }
-        .nav a{
-            color: white;
-            text-decoration: none;
-            font-size: 1.4rem;
-            margin-left: 1.5rem;
-        }
-        .nav a:hover {
-            color: aliceblue;
-            background: #bf994d;
-            border-radius: 5rem;
-            padding: 1rem;
-        }
-        .nav__busqueda-container{
-            display: flex;
-            align-items: center;
-            margin-left: auto;
-            margin-right: 2rem;
-        }
-        .nav__busqueda-container img{
-            height: 1.8rem;
-            margin-left: 1rem;
-        }
-        .nav__busqueda-container{
-            border-radius: 1rem;
-            height: 1.5rem;
-
-        }
         .barra{
             border-radius: 1rem;
             height: 1.5rem;
@@ -181,7 +136,6 @@
 
         }
         .botones{
-
         }
 
         .portada{
@@ -193,35 +147,27 @@
             border-radius: 1rem;
             width: 100%;
         }
-
-
     </style>
 
 </head>
 
-
 <body class="grid-container">
-
     <header class="header">
-            <h1>Generation Cinema</h1>
-            <h2>Cartelera</h2>
-    </header>
-
     <nav class="nav"> 
-            <img src="./img/img-1.png" alt="Logotipo">
-            <a href="./index.html">Inicio</a>
-            <a href="./cartelera.html">Cartelera</a>
-            <a href="./dulceria.html">Dulcería</a>
-            <a href="./nosotros.html">Nosotros</a>
-            <a href="./registro.html">Regístrate</a>  
+        <img src="./img/img-1.png" alt="Logotipo">
+        <a href="./index.html">Inicio</a>
+        <a href="./cartelera.html">Cartelera</a>
+        <a href="./dulceria.html">Dulcería</a>
+        <a href="./nosotros.html">Nosotros</a>
+        <a href="./registro.html">Regístrate</a>  
 
-        <div class="nav__busqueda-container">
-            <img src="./img/img-2.png" alt="icono busqueda">
-            <input class="barra" type="text" placeholder="Buscar Película">
-        </div>
-    </nav>
-       
-
+    <div class="nav__busqueda-container">
+        <img src="./img/img-2.png" alt="icono busqueda">
+        <input class="barra" type="text" placeholder="Buscar Película">
+    </div>
+</nav>
+</header>
+    <div><h1 class="header">Cartelera</h1></div>
     <section class="cards">
         <!--Primer  Pelicula-->
         <div class="movie">
